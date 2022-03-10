@@ -5,7 +5,7 @@ const bienvenidos = document.getElementById|('bienvenidos');
 
 
 function printImage(numero){
-    app.innerHTML = `<img src="./img/${numero}.jpg" alt="${numero}" />`
+    app.innerHTML = `<img src="./img/${numero}.jpg" />`
 }
 
 
@@ -15,7 +15,7 @@ mostrar.addEventListener('click',e =>{
     app.removeChild(app.firstChild);
 
     const image = parseInt(numero.value);
-    
+
     switch (image) {
         case 1:
             printImage(1);
